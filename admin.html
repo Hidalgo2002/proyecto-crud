@@ -9,6 +9,135 @@
     <title>Practica de CRUD</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Practica CRUD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="admin.html">Administracion</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h1 class="display-3 mt-5 text-center text-danger">administrar productos</h1>
+            <hr>
+            <h4 class="mt-5 text-start"> Cargar productos</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="codigo" class="form-label">Codigo</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="1234">
+                  </div>
+                  <div class="mb-3">
+                    <label for="producto" class="form-label">producto</label>
+                    <input type="text" class="form-control" id="produco" placeholder="ingrese un producto">
+                </div>
+                    <div class="mb-3">
+                        <label for="decripcion" class="form-label">descripcion</label>
+                        <textarea class="form-control" id="descripcion" rows="13" placeholder="agregue la descripcion de su producto"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="cantidad" class="form-label">cantidad</label>
+                        <input type="text" class="form-control" id="cantidad" placeholder="10">
+                    </div>
+                      <div class="mb-3">
+                        <label for="url" class="form-label">url</label>
+                        <input type="text" class="form-control" id="url" placeholder="10">
+                    </div>
+                  <button class="btn btn-primary">guardar</button>
+            </form>
+        </section> 
+      <section>
+        <h1 class="display-3 mt-5 text-center text-danger ">Tabla de productos </h1>
+            <hr>
+            <div class="text-start">
+              <button class="btn btn-primary">Nuevo</button>
+              <button class="btn btn-secondary">Carga de datos de prueba</button>
+            </div>
+            <div class=" my-5 table-responsive col col-md-12 col-sm-12">
+              <table class=" container">
+                <thead>
+                  <tr>
+                    <th scope="col col-sm-2">Cod.</th>
+                    <th scope="col col-sm-2">Producto</th>
+                    <th scope="col col-sm-2">Descripción</th>
+                    <th scope="col col-sm-2">Cantidad</th>
+                    <th scope="col col-sm-2">URL</th>
+                    <th scope="col col-sm-2">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class=" col-sm-2">
+                    <hr>
+                    <th>994</th>
+                    <td>Kakashi Hatake Anbu</td>
+                    <td>Funko figura pop naruto</td>
+                    <td>1</td>
+                    <td>urlLorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                  <tr class="col-sm-2">
+                    <th>933</th>
+                    <td>Shinikamaru Nara</td>
+                    <td>Naruto shippuden</td>
+                    <td>1</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                  <tr class="col-sm-2">
+                    <th>184</th>
+                    <td>Tobi</td>
+                    <td>Orochimaru</td>
+                    <td>1</td>
+                    <td>urlLorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                  <tr class="col-sm-2">
+                    <th>729</th>
+                    <td>Orochimaru</td>
+                    <td>Orochimaru figura collecianable multicolor</td>
+                    <td>1</td>
+                    <td>urlLorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                  <tr class="col-sm-2">
+                    <th>073</th>
+                    <td>Jiriya on toad</td>
+                    <td>Jiriya on toad es un muñeqo especial</td>
+                    <td>1</td>
+                    <td>urlLorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                  <tr class="col-sm-2">
+                    <th>728</th>
+                    <td>garaa</td>
+                    <td>Gaara on toad es un muñeqo especial</td>
+                    <td>1</td>
+                    <td>urlLorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit dicta nam nulla quis deleniti vero a animi.</td>
+                    <td class="btn btn-warning bg-warning">editar</td>
+                    <td class="btn btn-danger bg-danger">Borrar</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+      </section>
+    </main>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/admin.js"></script>
 </body>
